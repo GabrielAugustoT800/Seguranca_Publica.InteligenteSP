@@ -1,0 +1,1 @@
+"""Definição das arquiteturas MLP, treinamento e avaliação."""

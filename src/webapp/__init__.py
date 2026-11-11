@@ -1,0 +1,1 @@
+"""Aplicação web para inferência do modelo MLP treinado."""
