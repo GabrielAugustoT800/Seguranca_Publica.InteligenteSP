@@ -218,3 +218,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# === Específico do projeto ===
+# Dados brutos e processados (manter apenas .gitkeep)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Modelos binários (manter estrutura, versionar via instruções no README)
+models/**/*.pth
+models/**/*.h5
+models/**/*.pkl
+models/**/*.joblib
+models/**/*.keras
