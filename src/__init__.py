@@ -1,0 +1,1 @@
+"""Pacote principal do projeto de classificação de ocorrências com MLP."""

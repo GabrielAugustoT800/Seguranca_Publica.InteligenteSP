@@ -1,0 +1,1 @@
+"""Utilitários gerais (config, logger, helpers)."""
