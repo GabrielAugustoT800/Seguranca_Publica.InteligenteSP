@@ -19,6 +19,9 @@ Desafio prático de 4 horas (disciplina: Aprendizado Profundo com Redes Neurais 
 | `models/best/` | Modelo escolhido (regra de decisão): `mlp_model.pth`, `preprocessor.pkl`, `label_mapping.json`, `metadata.json`. |
 | `models/experiments/` | Resultados dos experimentos de arquitetura: `metrics_comparison.csv` (execução única, seções 5-8 do notebook) e `selecao_arquitetura/` (3 arquiteturas × 2 critérios × 5 seeds, `resultados_seeds.csv`, `historicos_seeds.json`, `resultados_opcional.csv`). |
 | `reports/` | Documentação final: slides, imagens (`images/curvas_perda.png`, `images/comparacao_seeds.png`), métricas. |
+| `netlify/` | Configurações da implantação na Netlify (publicação estática em `netlify/public/` e funções serverless em `netlify/functions/`). |
+| `netlify/public/` | Frontend da aplicação web: páginas HTML, CSS, scripts JS e o arquivo de opções dos formulários (`data/opcoes.json`). |
+| `netlify/functions/` | API serverless em JavaScript: pré-processamento e inferência da MLP 64→32 no endpoint `/api/classificar`. |
 | `tests/` | Testes unitários para validar pipeline. |
 
 ### notebooks/ — Etapas de desenvolvimento
@@ -77,7 +80,7 @@ O modelo final selecionado fica em **`models/best/`** (`mlp_model.pth`, `preproc
    - `notebooks/01_exploracao_dados.ipynb`
    - `notebooks/02_preparacao_dados.ipynb`
    - `notebooks/03_treinamento_MLP.ipynb`
-   - `notebooks/04_avaliacao_final.ipynb`
+   - `notebooks/04_teste_final.ipynb` (teste final com 2026, sem novo ajuste do modelo ou do pré-processador)
 
    > No `03_treinamento_MLP.ipynb`, as seções 5-7 treinam as 3 arquiteturas na GPU (com early stopping, pararam nas épocas 31, 19 e 17). A seção 10 reaproveita `models/experiments/selecao_arquitetura/resultados_seeds.csv` e `historicos_seeds.json` se existirem; caso contrário, treina as 30 execuções (cerca de 1h30 na GPU).
 
@@ -96,10 +99,94 @@ O modelo final selecionado fica em **`models/best/`** (`mlp_model.pth`, `preproc
    - Efeito: o CSV é regravado após cada execução; se o script for interrompido, `--etapa seeds` retoma de onde parou (pula execuções com resultado e histórico já salvos).
    - Determinismo: seeds fixas (torch, numpy, random) e cuDNN determinístico; duas rodadas independentes das 10 primeiras execuções deram diferença 0,0 em todas as métricas.
 
-4. Rode a aplicação web (exemplo com Flask/Streamlit):
-   ```bash
-   python src/webapp/app.py
-   ```
+4. Use a aplicação web: <https://redepreditoracelulares.netlify.app> (detalhes, execução local e contrato da API na seção **🌐 Aplicação web** abaixo).
+
+---
+
+## 🌐 Aplicação web (Netlify)
+
+A aplicação está publicada em:
+**[https://redepreditoracelulares.netlify.app](https://redepreditoracelulares.netlify.app)**
+
+O código completo da aplicação está na branch `webapp` deste repositório.
+
+### Comandos úteis
+
+- **Gerar os artefatos JS de inferência** (pesos, pré-processamento e metadados a partir do modelo treinado):
+  ```bash
+  python -m src.webapp.export_artifacts
+  ```
+  Este script lê os artefatos do PyTorch em `models/best/` e gera os arquivos JS em `netlify/functions/artefatos/` para que a função serverless possa rodar a inferência sem dependências Python.
+
+- **Testar a paridade JS × PyTorch** (200 casos da validação):
+  ```bash
+  node netlify/test_paridade.mjs
+  ```
+  Verifica que o forward pass em JavaScript produz resultados idênticos ao PyTorch (diferença máxima inferior a 1e-6) e valida os códigos de erro 400, 413 e 405.
+
+- **Rodar localmente para desenvolvimento**:
+  ```bash
+  netlify dev
+  # Acesse http://localhost:8888
+  ```
+  Serve o frontend estático em `http://localhost:8888` e a API localmente.
+
+### Contrato da API v1.0
+
+Endpoint: `POST /api/classificar`
+
+**Entrada** (corpo JSON, todos os campos opcionais; campo vazio é tratado como ausente e imputado da mesma forma que no treino):
+
+| Campo | Tipo | Descrição |
+|-------|------|-----------|
+| `tipo_local` | string | Tipo de local da ocorrência |
+| `subtipo_local` | string | Subtipo de local da ocorrência |
+| `bairro` | string | Bairro da ocorrência |
+| `periodo` | string | Período do dia (manhã/tarde/noite/madrugada) |
+| `data` | string | Data da ocorrência (AAAA-MM-DD) |
+| `hora` | string | Hora da ocorrência (HH:MM) |
+
+Limites:
+- Tamanho máximo do corpo da requisição: 8 kB.
+- Tamanho máximo de cada campo: 200 caracteres.
+- Campos extras são rejeitados (status 400).
+- Métodos diferentes de POST são rejeitados (status 405).
+- Categoria desconhecida: seu bloco one-hot fica com todos zeros (`handle_unknown='ignore'`) e um aviso é adicionado na resposta.
+
+**Resposta de sucesso (200):**
+```json
+{
+  "classe": "Roubo",
+  "prob_roubo": 0.87,
+  "prob_furto": 0.13,
+  "limiar": 0.5,
+  "versao_modelo": "6b29daff0c13",
+  "versao_contrato": "1.0",
+  "avisos": [],
+  "aviso_interpretacao": "A saída é a classe estimada (roubo ou furto) para a ocorrência descrita. Não é uma estimativa de risco ou de chance de crime no local, na data ou no horário."
+}
+```
+
+**Erros:**
+- `400`: campo com formato inválido, campo extra ou corpo mal formado (`{erro:{codigo, mensagem, campos?}}`).
+- `405`: método HTTP não permitido.
+- `413`: corpo da requisição excede 8 kB.
+- `500`: erro interno (mensagem genérica, sem detalhes internos).
+
+Este contrato pode ser reutilizado por um futuro cliente React Native: basta enviar o corpo JSON acima para o endpoint `/api/classificar` e ler `classe`, `prob_roubo`, `prob_furto` e `avisos`.
+
+### Passos de deploy na Netlify
+
+1. Acesse https://app.netlify.com → **Add new project → Import an existing project → GitHub**.
+2. Selecione o repositório `GabrielAugustoT800/Seguranca_Publica.InteligenteSP` e a branch **`webapp`**.
+3. Não altere as configurações de build. O `netlify.toml` já define a pasta publicada (`netlify/public`) e as funções (`netlify/functions`).
+4. Clique em **Deploy**.
+5. Em **Site configuration → Change site name**, defina um nome. O endereço ficará `https://<nome>.netlify.app`.
+6. O Netlify pode tentar instalar o `requirements.txt` da raiz (que inclui torch). Se o deploy falhar por isso, publique pelo terminal com a Netlify CLI instalada em `D:\Ferramentas\netlify-cli`.
+
+Deploy realizado em 2026-11-14 pela importação do GitHub (branch `webapp`). A API publicada foi testada com uma requisição POST em UTF-8 e retornou a mesma resposta do ambiente local (`classe` Furto, `prob_roubo` 0,402411, `versao_modelo` 6b29daff0c13).
+
+---
 
 ## 📊 Entregas obrigatórias
 
@@ -108,7 +195,7 @@ O modelo final selecionado fica em **`models/best/`** (`mlp_model.pth`, `preproc
 | Repositório GitHub | Este repositório |
 | Notebook documentado | `notebooks/` (03_treinamento_MLP.ipynb corrigido: Val Acc da melhor época; seção 10-13 de seleção rigorosa) |
 | Relatório técnico (máx. 10 slides) | `reports/slides/` |
-| Aplicação web funcional | `src/webapp/` + link no README |
+| Aplicação web funcional | <https://redepreditoracelulares.netlify.app> (código em `netlify/`, branch `webapp`) |
 | Modelo selecionado e artefatos | `models/best/` (64→32, val_loss) + `metadata.json` |
 | Experimentação completa | `models/experiments/selecao_arquitetura/` (30 seeds, históricos, etapa 8 opcional parcial) |
 | Figuras | `reports/images/curvas_perda.png` e `reports/images/comparacao_seeds.png` |
@@ -260,3 +347,5 @@ Acurácia 0,8346. O resultado coincide com a média das 5 seeds (test F1 0,8232 
 | 2026-11-14 | Critério de early stopping: manter `val_loss` como padrão; `val_f1` testado como alternativa | **DECIDIDO** | Com `val_f1`, o F1 médio sobe só ~0,0003-0,001 (dentro do ruído), mas a melhor época fica instável (32: 28,4 ± 12,3) e a val_loss piora. | `monitor='val_loss'`, `mode='min'`, patience 10, min_delta 1e-4. `val_f1` permanece disponível no script para comparação. |
 | 2026-11-14 | Etapa 8 opcional: regularizar a 128→64→32 (weight_decay × dropout × lr, 3 seeds) | **INTERROMPIDO** | Executada para verificar se a rede maior se justificaria com mais regularização; interrompida a pedido do responsável após 9 de 24 execuções. | Melhor combinação concluída (wd 1e-4, dropout 0,5, lr 1e-4): Val F1 0,8238 ± 0,0002, sem ganho além do ruído. Resultados parciais em `resultados_opcional.csv`; as 15 combinações restantes (wd 1e-4/dropout 0,5/lr 5e-5 e todas com wd 1e-3) podem ser rodadas com `--etapa opcional`. |
 | 2026-11-14 | Escolher modelo final: 64→32 com early stopping por `val_loss` | **DECIDIDO** | 64→32 e 128→64→32 empatam em Val F1 (0,8235; p=0,95 t pareado); a 32 fica 0,0010 abaixo. 64→32 tem metade dos parâmetros, Val Loss mais estável, menor risco de overfitting (melhor época mais tardia) e não perde para a 128→64→32 em nenhum critério. O teste 2025 confirma (F1 0,8232). A etapa 8 opcional (128→64→32 com regularização; 9/24 combinações) não mostrou justificativa para a rede maior. | Modelo salvo em `models/best/mlp_model.pth` + `metadata.json` (arquitetura, hiperparâmetros, regra, métricas de validação e confirmação no teste 2025). Teste 2026 continua reservado e fora da seleção. |
+| 2026-11-14 | Procedimento anterior: aplicação web com Flask/Streamlit e PyTorch em `src/webapp/app.py` | **SUBSTITUÍDO** | Streamlit está fora do escopo do projeto, e as Netlify Functions não executam Python, o que impede hospedar o PyTorch na Netlify. | Sucessor: inferência em JavaScript puro (decisão abaixo). A instrução "Rode a aplicação web (exemplo com Flask/Streamlit)" da seção "Como executar" foi trocada pelo link público. |
+| 2026-11-14 | Aplicação web na Netlify com inferência MLP reimplementada em JavaScript | **DECIDIDO** | Permite hospedagem gratuita em servidor real, sem um backend Python ativo. Separa a interface (`netlify/public/`), a API e a inferência (`netlify/functions/`). | Os pesos e o pré-processamento são exportados por `python -m src.webapp.export_artifacts`, versão do modelo `6b29daff0c13`. A paridade com o PyTorch foi conferida em 200 casos (diferença máxima 6,99e-7, `node netlify/test_paridade.mjs`). O contrato da API v1.0 está documentado para reúso por um futuro cliente React Native. O site está publicado em <https://redepreditoracelulares.netlify.app>. |
