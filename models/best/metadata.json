@@ -1,0 +1,29 @@
+{
+  "architecture": "64→32",
+  "hidden_sizes": [
+    64,
+    32
+  ],
+  "n_features": 1914,
+  "n_parameters": 124673,
+  "activation": "relu",
+  "dropout": 0.2,
+  "optimizer": "AdamW",
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0001,
+  "batch_size": 32,
+  "max_epochs": 50,
+  "best_epoch": 9,
+  "early_stopping": {
+    "monitor": "val_loss",
+    "mode": "min",
+    "patience": 10,
+    "min_delta": 0.0001
+  },
+  "threshold": 0.5,
+  "selection_rule": "64→32 tem o maior val_F1 médio e nenhuma mais simples fica a ≤ 1 desvio.",
+  "val_f1_seeds_mean": 0.8235326458513116,
+  "val_f1_seeds_std": 0.00047100837359750853,
+  "test_2025_accuracy": 0.8345914284535743,
+  "test_2025_f1_macro": 0.8231947429035157
+}
