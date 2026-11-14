@@ -1,0 +1,2 @@
+// Gerado por src/webapp/export_artifacts.py. Não editar à mão.
+export default {"architecture":"64→32","hidden_sizes":[64,32],"n_features":1914,"n_parameters":124673,"activation":"relu","threshold":0.5,"best_epoch":9,"selection_rule":"64→32 tem o maior val_F1 médio e nenhuma mais simples fica a ≤ 1 desvio.","val_f1_seeds_mean":0.8235326458513116,"val_f1_seeds_std":0.00047100837359750853,"test_2025_accuracy":0.8345914284535743,"test_2025_f1_macro":0.8231947429035157,"versao_modelo":"6b29daff0c13","versao_contrato":"1.0","exportado_em":"2026-11-14T16:53:55Z"};

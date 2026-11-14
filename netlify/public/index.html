@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InteligenteSP · Classificador de ocorrências</title>
+  <meta name="description" content="Classificação de ocorrências de celulares subtraídos em São Paulo como roubo ou furto, com uma rede MLP.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="landing">
+  <main class="landing-main">
+    <!-- Olho digital decorativo: segue o cursor; ignorado por leitores de tela. -->
+    <svg class="eye" viewBox="-200 -200 400 400" aria-hidden="true" focusable="false">
+      <defs>
+        <radialGradient id="g-nucleo" cx="0" cy="0" r="1" gradientUnits="objectBoundingBox" fx="0.5" fy="0.5">
+          <stop offset="0%" stop-color="#ffd6d6"/>
+          <stop offset="18%" stop-color="#ff2a2a"/>
+          <stop offset="55%" stop-color="#9a0000"/>
+          <stop offset="100%" stop-color="#1a0000"/>
+        </radialGradient>
+        <radialGradient id="g-halo">
+          <stop offset="0%" stop-color="rgba(255,0,40,0.45)"/>
+          <stop offset="100%" stop-color="rgba(255,0,40,0)"/>
+        </radialGradient>
+        <filter id="f-brilho" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="4" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+      <circle r="195" fill="url(#g-halo)"/>
+      <g class="anel anel-externo"><circle r="180"/></g>
+      <g class="anel anel-marcas"><circle r="165"/></g>
+      <g class="anel anel-tracos"><circle r="148"/></g>
+      <g class="anel anel-fino"><circle r="132"/></g>
+      <g class="iris" id="iris">
+        <circle class="iris-aro" r="96"/>
+        <circle class="iris-aro" r="82"/>
+        <circle class="iris-aro" r="68"/>
+        <circle r="60" fill="url(#g-nucleo)" filter="url(#f-brilho)"/>
+        <g class="iris-raios"></g>
+        <circle class="pupila" r="16"/>
+        <circle class="reflexo" cx="-7" cy="-8" r="4"/>
+      </g>
+      <g class="varredura"><path d="M0 0 L0 -180 A180 180 0 0 1 60 -170 Z"/></g>
+    </svg>
+
+    <h1 class="landing-titulo">InteligenteSP</h1>
+    <p class="landing-sub">Classificação de ocorrências: roubo ou furto de celular na cidade de São Paulo</p>
+    <a href="form.html" class="btn-entrar">Entrar</a>
+  </main>
+  <script src="js/eye.js"></script>
+</body>
+</html>

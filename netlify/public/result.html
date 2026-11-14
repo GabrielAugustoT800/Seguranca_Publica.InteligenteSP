@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultado · InteligenteSP</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="pagina">
+    <header class="cabecalho">
+      <a href="index.html" class="marca">InteligenteSP</a>
+      <h1 id="titulo-resultado" tabindex="-1">Classe estimada da ocorrência</h1>
+    </header>
+
+    <section class="cartao" aria-labelledby="titulo-resultado">
+      <p class="rotulo-classe">O modelo classificou a ocorrência descrita como</p>
+      <p class="classe" id="classe">—</p>
+      <dl class="probs">
+        <div class="prob">
+          <dt>Roubo</dt>
+          <dd><span class="barra" aria-hidden="true"><span class="preenche roubo" id="barra-roubo"></span></span><span id="valor-roubo">—</span></dd>
+        </div>
+        <div class="prob">
+          <dt>Furto</dt>
+          <dd><span class="barra" aria-hidden="true"><span class="preenche furto" id="barra-furto"></span></span><span id="valor-furto">—</span></dd>
+        </div>
+      </dl>
+      <p class="limiar" id="limiar"></p>
+    </section>
+
+    <p class="aviso" id="interpretacao"></p>
+    <ul class="avisos" id="avisos" hidden aria-label="Observações sobre os dados informados"></ul>
+
+    <section class="resumo" aria-labelledby="titulo-resumo">
+      <h2 id="titulo-resumo">Dados informados</h2>
+      <dl id="resumo"></dl>
+    </section>
+
+    <p class="rodape" id="versao"></p>
+
+    <div class="acoes">
+      <a href="index.html" class="btn-secundario">Início</a>
+      <a href="form.html" class="btn-primario">Nova classificação</a>
+    </div>
+  </main>
+  <script src="js/result.js"></script>
+</body>
+</html>

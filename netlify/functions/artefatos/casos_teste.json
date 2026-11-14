@@ -1,0 +1,2202 @@
+[
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "LIMÃO",
+   "periodo": "missing",
+   "data": "2025-07-20",
+   "hora": "17:00"
+  },
+  "prob_roubo_esperada": 0.459803
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "SANTA CECILIA",
+   "periodo": "A noite",
+   "data": "2025-02-16",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.089165
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JARDIM LOURDES",
+   "periodo": "A noite",
+   "data": "2025-08-14",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.120171
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "ITAQUERA",
+   "periodo": "A tarde",
+   "data": "2025-07-24",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.06813
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JARDIM PAULISTA",
+   "periodo": "A noite",
+   "data": "2025-07-27",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.072571
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "LAPA DE BAIXO",
+   "periodo": "A noite",
+   "data": "2025-02-14",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.128077
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "ITAQUERA",
+   "periodo": "De madrugada",
+   "data": "2025-08-03",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.147655
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Interior de Transporte Coletivo",
+   "bairro": "JARDIM AMERICA DA PENHA",
+   "periodo": "missing",
+   "data": "2025-08-07",
+   "hora": "12:30"
+  },
+  "prob_roubo_esperada": 0.043946
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "REPÚBLICA",
+   "periodo": "A noite",
+   "data": "2025-03-01",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.087483
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JABAQUARA",
+   "periodo": "missing",
+   "data": "2025-03-22",
+   "hora": "23:43"
+  },
+  "prob_roubo_esperada": 0.899337
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "SANTA CECILIA",
+   "periodo": "A tarde",
+   "data": "2025-03-03",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.050185
+ },
+ {
+  "entrada": {
+   "tipo_local": "Outros",
+   "subtipo_local": "Outros",
+   "bairro": "SANTANA",
+   "periodo": "A noite",
+   "data": "2025-03-20",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.029712
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "SAO RAFAEL",
+   "periodo": "missing",
+   "data": "2025-01-03",
+   "hora": "00:37"
+  },
+  "prob_roubo_esperada": 0.936202
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PINHEIROS",
+   "periodo": "De madrugada",
+   "data": "2025-01-25",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.102486
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA DA SAÚDE",
+   "periodo": "De madrugada",
+   "data": "2025-01-18",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.200676
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CIDADE SÃO MATEUS",
+   "periodo": "missing",
+   "data": "2025-01-20",
+   "hora": "21:40"
+  },
+  "prob_roubo_esperada": 0.92632
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CAMPO LIMPO",
+   "periodo": "A tarde",
+   "data": "2025-03-07",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.338208
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "SANTANA",
+   "periodo": "A tarde",
+   "data": "2025-09-13",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.059116
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CENTRO HISTÓRICO DE SÃO PAULO",
+   "periodo": "Pela manhã",
+   "data": "2025-08-15",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.098368
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Interior de Veículo Particular",
+   "bairro": "VILA CARRÃO",
+   "periodo": "missing",
+   "data": "2025-05-08",
+   "hora": "18:00"
+  },
+  "prob_roubo_esperada": 0.301436
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PINHEIROS",
+   "periodo": "A tarde",
+   "data": "2025-11-12",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.039616
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CANGAIBA",
+   "periodo": "missing",
+   "data": "2025-12-12",
+   "hora": "15:00"
+  },
+  "prob_roubo_esperada": 0.586432
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA CURUCA",
+   "periodo": "Pela manhã",
+   "data": "2025-06-19",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.115811
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JARDIM COLINA",
+   "periodo": "missing",
+   "data": "2025-12-02",
+   "hora": "09:00"
+  },
+  "prob_roubo_esperada": 0.664708
+ },
+ {
+  "entrada": {
+   "tipo_local": "Outros",
+   "subtipo_local": "Outros",
+   "bairro": "BELA VISTA",
+   "periodo": "A noite",
+   "data": "2025-12-09",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.015266
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JOSE BONIFACIO",
+   "periodo": "missing",
+   "data": "2025-05-04",
+   "hora": "19:45"
+  },
+  "prob_roubo_esperada": 0.833177
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "LIBERDADE",
+   "periodo": "missing",
+   "data": "2025-08-21",
+   "hora": "18:38"
+  },
+  "prob_roubo_esperada": 0.276934
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "RETIRO MORUMBI",
+   "periodo": "missing",
+   "data": "2025-04-08",
+   "hora": "18:29"
+  },
+  "prob_roubo_esperada": 0.535567
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JARDIM DAS GRACAS",
+   "periodo": "A noite",
+   "data": "2025-07-16",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.061949
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Metroviário e Ferroviário Metropolitano",
+   "bairro": "CIDADE ANTÔNIO ESTEVÃO DE CARVALHO",
+   "periodo": "Pela manhã",
+   "data": "2025-12-30",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.013599
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "SANTA CECILIA",
+   "periodo": "A tarde",
+   "data": "2025-02-21",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.047856
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "ITAIM PAULISTA",
+   "periodo": "missing",
+   "data": "2025-06-27",
+   "hora": "23:00"
+  },
+  "prob_roubo_esperada": 0.907281
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JARDIM HELENA",
+   "periodo": "Pela manhã",
+   "data": "2025-07-01",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.091619
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CAPAO REDONDO",
+   "periodo": "missing",
+   "data": "2025-10-04",
+   "hora": "00:32"
+  },
+  "prob_roubo_esperada": 0.963668
+ },
+ {
+  "entrada": {
+   "tipo_local": "Outros",
+   "subtipo_local": "Outros",
+   "bairro": "MOEMA",
+   "periodo": "A noite",
+   "data": "2025-08-20",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.019756
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PINHEIROS",
+   "periodo": "De madrugada",
+   "data": "2025-08-03",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.090945
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PINHEIROS",
+   "periodo": "missing",
+   "data": "2025-06-14",
+   "hora": "21:45"
+  },
+  "prob_roubo_esperada": 0.759336
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "IPIRANGA",
+   "periodo": "missing",
+   "data": "2025-02-14",
+   "hora": "11:50"
+  },
+  "prob_roubo_esperada": 0.526122
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "IGUATEMI",
+   "periodo": "De madrugada",
+   "data": "2025-06-01",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.2433
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Metroviário e Ferroviário Metropolitano",
+   "bairro": "CONSOLAÇÃO",
+   "periodo": "Pela manhã",
+   "data": "2025-10-29",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.010802
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA PREL",
+   "periodo": "Pela manhã",
+   "data": "2025-01-04",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.106322
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA MARIANA",
+   "periodo": "A tarde",
+   "data": "2025-03-03",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.052318
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "LAPA",
+   "periodo": "A tarde",
+   "data": "2025-05-16",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.07791
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA GUILHERME",
+   "periodo": "De madrugada",
+   "data": "2025-03-02",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.116737
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "SANTA CECILIA",
+   "periodo": "missing",
+   "data": "2025-05-10",
+   "hora": "23:00"
+  },
+  "prob_roubo_esperada": 0.797926
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PARQUE ARTUR ALVIM",
+   "periodo": "A noite",
+   "data": "2025-08-27",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.082955
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "IPIRANGA",
+   "periodo": "A tarde",
+   "data": "2025-11-12",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.05609
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Metroviário e Ferroviário Metropolitano",
+   "bairro": "JARDIM SÃO JANUÁRIO",
+   "periodo": "A tarde",
+   "data": "2025-05-06",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.016881
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CANGAIBA",
+   "periodo": "missing",
+   "data": "2025-04-09",
+   "hora": "12:45"
+  },
+  "prob_roubo_esperada": 0.675642
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Ônibus/Lotação/Trolebus",
+   "bairro": "PARQUE ARTUR ALVIM",
+   "periodo": "Em hora incerta",
+   "data": "2025-07-27",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.036159
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CONSOLACAO",
+   "periodo": "Pela manhã",
+   "data": "2025-05-31",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.042956
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "BRÁS",
+   "periodo": "missing",
+   "data": "2025-07-31",
+   "hora": "22:30"
+  },
+  "prob_roubo_esperada": 0.511035
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "REPUBLICA",
+   "periodo": "missing",
+   "data": "2025-02-27",
+   "hora": "21:30"
+  },
+  "prob_roubo_esperada": 0.715804
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "BROOKLIN",
+   "periodo": "Pela manhã",
+   "data": "2025-11-28",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.065497
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "SANTO AMARO",
+   "periodo": "A tarde",
+   "data": "2025-11-24",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.066721
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "ANHANGUERA",
+   "periodo": "A noite",
+   "data": "2025-06-18",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.119488
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Veículo em movimento",
+   "bairro": "JD SÃO LUIS",
+   "periodo": "missing",
+   "data": "2025-10-10",
+   "hora": "17:15"
+  },
+  "prob_roubo_esperada": 0.866179
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PINHEIROS",
+   "periodo": "Pela manhã",
+   "data": "2025-12-16",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.039738
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "SANTO AMARO",
+   "periodo": "A noite",
+   "data": "2025-09-04",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.120169
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CIDADE ADEMAR",
+   "periodo": "missing",
+   "data": "2025-07-02",
+   "hora": "12:30"
+  },
+  "prob_roubo_esperada": 0.729302
+ },
+ {
+  "entrada": {
+   "tipo_local": "Outros",
+   "subtipo_local": "Outros",
+   "bairro": "PARQUE INDUSTRIAL TOMAS EDSON",
+   "periodo": "A noite",
+   "data": "2025-07-23",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.031352
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "BRÁS",
+   "periodo": "missing",
+   "data": "2025-08-16",
+   "hora": "17:00"
+  },
+  "prob_roubo_esperada": 0.299634
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PINHEIROS",
+   "periodo": "De madrugada",
+   "data": "2025-08-17",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.090945
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JAGUARA",
+   "periodo": "A noite",
+   "data": "2025-03-25",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.280158
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA RIO BRANCO",
+   "periodo": "A noite",
+   "data": "2025-08-29",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.138174
+ },
+ {
+  "entrada": {
+   "tipo_local": "Saúde",
+   "subtipo_local": "Hospital",
+   "bairro": "LAJEADO",
+   "periodo": "missing",
+   "data": "2025-05-25",
+   "hora": "04:30"
+  },
+  "prob_roubo_esperada": 0.135033
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA SOCORRO",
+   "periodo": "A tarde",
+   "data": "2025-04-23",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.095707
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JARDIM PRUDÊNCIA",
+   "periodo": "missing",
+   "data": "2025-01-28",
+   "hora": "16:00"
+  },
+  "prob_roubo_esperada": 0.756713
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JD SÃO LUIS",
+   "periodo": "missing",
+   "data": "2025-02-06",
+   "hora": "23:00"
+  },
+  "prob_roubo_esperada": 0.962692
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JARDIM DAS GRACAS",
+   "periodo": "A noite",
+   "data": "2025-03-20",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.067019
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "LAJEADO",
+   "periodo": "Pela manhã",
+   "data": "2025-12-06",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.091475
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA MATILDE",
+   "periodo": "missing",
+   "data": "2025-04-07",
+   "hora": "13:00"
+  },
+  "prob_roubo_esperada": 0.747621
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA CURUCA",
+   "periodo": "missing",
+   "data": "2025-01-08",
+   "hora": "12:00"
+  },
+  "prob_roubo_esperada": 0.78761
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "LIBERDADE",
+   "periodo": "A tarde",
+   "data": "2025-04-26",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.035506
+ },
+ {
+  "entrada": {
+   "tipo_local": "Outros",
+   "subtipo_local": "Outros",
+   "bairro": "CIDADE DUTRA",
+   "periodo": "De madrugada",
+   "data": "2025-09-08",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.068784
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA CRUZ DAS ALMAS",
+   "periodo": "missing",
+   "data": "2025-05-14",
+   "hora": "23:00"
+  },
+  "prob_roubo_esperada": 0.928741
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "MOOCA",
+   "periodo": "A tarde",
+   "data": "2025-07-16",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.032366
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "FREGUESIA DO O",
+   "periodo": "missing",
+   "data": "2025-11-08",
+   "hora": "21:30"
+  },
+  "prob_roubo_esperada": 0.861756
+ },
+ {
+  "entrada": {
+   "tipo_local": "Outros",
+   "subtipo_local": "Outros",
+   "bairro": "JARDIM PAULISTA",
+   "periodo": "A noite",
+   "data": "2025-10-29",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.016372
+ },
+ {
+  "entrada": {
+   "tipo_local": "Outros",
+   "subtipo_local": "Outros",
+   "bairro": "VILA GUILHERME",
+   "periodo": "Pela manhã",
+   "data": "2025-08-27",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.012585
+ },
+ {
+  "entrada": {
+   "tipo_local": "Outros",
+   "subtipo_local": "Outros",
+   "bairro": "REPÚBLICA",
+   "periodo": "A noite",
+   "data": "2025-07-13",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.019343
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "BRAS",
+   "periodo": "Pela manhã",
+   "data": "2025-04-26",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.041561
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PARQUE DO LAGO",
+   "periodo": "missing",
+   "data": "2025-06-25",
+   "hora": "07:30"
+  },
+  "prob_roubo_esperada": 0.910691
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Metroviário e Ferroviário Metropolitano",
+   "bairro": "BARRA FUNDA",
+   "periodo": "missing",
+   "data": "2025-12-03",
+   "hora": "08:30"
+  },
+  "prob_roubo_esperada": 0.293638
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "LUZ",
+   "periodo": "A tarde",
+   "data": "2025-09-06",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.054627
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "BRAS",
+   "periodo": "missing",
+   "data": "2025-06-08",
+   "hora": "15:30"
+  },
+  "prob_roubo_esperada": 0.387625
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CONJUNTO HABITACIONAL SANTA ETELVINA II",
+   "periodo": "De madrugada",
+   "data": "2025-05-01",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.132571
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Interior de Veículo Particular",
+   "bairro": "PINHEIROS",
+   "periodo": "missing",
+   "data": "2025-03-07",
+   "hora": "19:20"
+  },
+  "prob_roubo_esperada": 0.310163
+ },
+ {
+  "entrada": {
+   "tipo_local": "Favela",
+   "subtipo_local": "Bar",
+   "bairro": "VILA HELIOPOLIS",
+   "periodo": "missing",
+   "data": "2025-11-30",
+   "hora": "01:00"
+  },
+  "prob_roubo_esperada": 0.234951
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "LIBERDADE",
+   "periodo": "A tarde",
+   "data": "2025-10-18",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.032114
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "BELEM",
+   "periodo": "missing",
+   "data": "2025-09-02",
+   "hora": "16:40"
+  },
+  "prob_roubo_esperada": 0.525089
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA ANDRADE",
+   "periodo": "missing",
+   "data": "2025-08-05",
+   "hora": "14:00"
+  },
+  "prob_roubo_esperada": 0.849308
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "ARTUR ALVIM",
+   "periodo": "missing",
+   "data": "2025-04-18",
+   "hora": "21:30"
+  },
+  "prob_roubo_esperada": 0.884978
+ },
+ {
+  "entrada": {
+   "tipo_local": "Outros",
+   "subtipo_local": "Outros",
+   "bairro": "MOEMA",
+   "periodo": "A tarde",
+   "data": "2025-03-03",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.012143
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "LAPA",
+   "periodo": "Pela manhã",
+   "data": "2025-04-04",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.081321
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA ANDRADE",
+   "periodo": "missing",
+   "data": "2025-02-14",
+   "hora": "17:20"
+  },
+  "prob_roubo_esperada": 0.883473
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JOSE BONIFACIO",
+   "periodo": "missing",
+   "data": "2025-04-17",
+   "hora": "04:45"
+  },
+  "prob_roubo_esperada": 0.833809
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Metroviário e Ferroviário Metropolitano",
+   "bairro": "JAGUARE",
+   "periodo": "A tarde",
+   "data": "2025-11-11",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.041227
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Metroviário e Ferroviário Metropolitano",
+   "bairro": "CHÁCARA ITAIM",
+   "periodo": "Pela manhã",
+   "data": "2025-09-08",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.010278
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PIRITUBA",
+   "periodo": "missing",
+   "data": "2025-03-03",
+   "hora": "13:00"
+  },
+  "prob_roubo_esperada": 0.756388
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA OLÍMPIA",
+   "periodo": "A noite",
+   "data": "2025-06-24",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.135134
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Metroviário e Ferroviário Metropolitano",
+   "bairro": "JARDIM SÃO JANUÁRIO",
+   "periodo": "Pela manhã",
+   "data": "2025-06-30",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.017495
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "BRÁS",
+   "periodo": "Pela manhã",
+   "data": "2025-11-29",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.040726
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PINHEIROS",
+   "periodo": "A tarde",
+   "data": "2025-02-01",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.042933
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Rodoviário",
+   "bairro": "SANTANA",
+   "periodo": "missing",
+   "data": "2025-03-20",
+   "hora": "02:30"
+  },
+  "prob_roubo_esperada": 0.180487
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JOSE BONIFACIO",
+   "periodo": "missing",
+   "data": "2025-05-24",
+   "hora": "19:00"
+  },
+  "prob_roubo_esperada": 0.83448
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "SAO MATEUS",
+   "periodo": "A tarde",
+   "data": "2025-05-09",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.119426
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JARAGUA",
+   "periodo": "missing",
+   "data": "2025-04-09",
+   "hora": "17:30"
+  },
+  "prob_roubo_esperada": 0.846761
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "LIBERDADE",
+   "periodo": "missing",
+   "data": "2025-04-25",
+   "hora": "10:45"
+  },
+  "prob_roubo_esperada": 0.276753
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PINHEIROS",
+   "periodo": "Pela manhã",
+   "data": "2025-02-11",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.04735
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA CURUCA",
+   "periodo": "missing",
+   "data": "2025-11-29",
+   "hora": "22:30"
+  },
+  "prob_roubo_esperada": 0.880398
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JARDIM SÃO JANUÁRIO",
+   "periodo": "A noite",
+   "data": "2025-09-17",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.093205
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA FORMOSA",
+   "periodo": "missing",
+   "data": "2025-03-13",
+   "hora": "12:30"
+  },
+  "prob_roubo_esperada": 0.655742
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JARDIM BELCITO",
+   "periodo": "missing",
+   "data": "2025-11-30",
+   "hora": "01:30"
+  },
+  "prob_roubo_esperada": 0.917539
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Metroviário e Ferroviário Metropolitano",
+   "bairro": "CONSOLAÇÃO",
+   "periodo": "A noite",
+   "data": "2025-08-14",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.020073
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Interior de Transporte Coletivo",
+   "bairro": "JAGUARE",
+   "periodo": "missing",
+   "data": "2025-11-05",
+   "hora": "07:00"
+  },
+  "prob_roubo_esperada": 0.076598
+ },
+ {
+  "entrada": {
+   "tipo_local": "Outros",
+   "subtipo_local": "Outros",
+   "bairro": "SE",
+   "periodo": "A tarde",
+   "data": "2025-09-15",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.013301
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "SANTA CECILIA",
+   "periodo": "Pela manhã",
+   "data": "2025-01-19",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.055294
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Metroviário e Ferroviário Metropolitano",
+   "bairro": "CHÁCARA ITAIM",
+   "periodo": "A noite",
+   "data": "2025-02-27",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.021442
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PONTE RASA",
+   "periodo": "missing",
+   "data": "2025-10-31",
+   "hora": "16:00"
+  },
+  "prob_roubo_esperada": 0.786768
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CAMBUCI",
+   "periodo": "missing",
+   "data": "2025-03-13",
+   "hora": "09:30"
+  },
+  "prob_roubo_esperada": 0.426652
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "LIMAO",
+   "periodo": "A tarde",
+   "data": "2025-09-24",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.078716
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA LEOPOLDINA",
+   "periodo": "missing",
+   "data": "2025-03-07",
+   "hora": "04:00"
+  },
+  "prob_roubo_esperada": 0.679739
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JARDIM TRÊS MARIAS",
+   "periodo": "De madrugada",
+   "data": "2025-12-22",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.227457
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA MATILDE",
+   "periodo": "A noite",
+   "data": "2025-10-16",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.245334
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA ROMANA",
+   "periodo": "Pela manhã",
+   "data": "2025-01-13",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.080827
+ },
+ {
+  "entrada": {
+   "tipo_local": "Residência",
+   "subtipo_local": "Apartamento",
+   "bairro": "REPUBLICA",
+   "periodo": "missing",
+   "data": "2025-01-29",
+   "hora": "20:30"
+  },
+  "prob_roubo_esperada": 0.340539
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JARAGUA",
+   "periodo": "De madrugada",
+   "data": "2025-02-15",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.407613
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Metroviário e Ferroviário Metropolitano",
+   "bairro": "BELA VISTA",
+   "periodo": "A noite",
+   "data": "2025-08-19",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.021649
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CONSOLAÇÃO",
+   "periodo": "De madrugada",
+   "data": "2025-08-02",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.079894
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "ERMELINO MATARAZZO",
+   "periodo": "A tarde",
+   "data": "2025-05-15",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.081881
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Metroviário e Ferroviário Metropolitano",
+   "bairro": "IPIRANGA",
+   "periodo": "A noite",
+   "data": "2025-04-29",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.038957
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "LIBERDADE",
+   "periodo": "missing",
+   "data": "2025-04-15",
+   "hora": "14:40"
+  },
+  "prob_roubo_esperada": 0.270856
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA MARIANA",
+   "periodo": "De madrugada",
+   "data": "2025-06-22",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.112004
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "SANTO AMARO",
+   "periodo": "missing",
+   "data": "2025-06-25",
+   "hora": "12:40"
+  },
+  "prob_roubo_esperada": 0.607175
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "MIRANDÓPOLIS",
+   "periodo": "missing",
+   "data": "2025-02-11",
+   "hora": "07:20"
+  },
+  "prob_roubo_esperada": 0.690042
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CAMPO BELO",
+   "periodo": "A tarde",
+   "data": "2025-10-26",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.112751
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "ITAIM BIBI",
+   "periodo": "A noite",
+   "data": "2025-05-22",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.095372
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JARDIM PAULISTA",
+   "periodo": "missing",
+   "data": "2025-01-12",
+   "hora": "11:30"
+  },
+  "prob_roubo_esperada": 0.582813
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Metroviário e Ferroviário Metropolitano",
+   "bairro": "CONSOLAÇÃO",
+   "periodo": "Pela manhã",
+   "data": "2025-03-14",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.012478
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PINHEIROS",
+   "periodo": "missing",
+   "data": "2025-01-19",
+   "hora": "01:23"
+  },
+  "prob_roubo_esperada": 0.734839
+ },
+ {
+  "entrada": {
+   "tipo_local": "Outros",
+   "subtipo_local": "Outros",
+   "bairro": "VILA GUILHERME",
+   "periodo": "A tarde",
+   "data": "2025-09-07",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.011372
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CIDADE DUTRA",
+   "periodo": "missing",
+   "data": "2025-03-14",
+   "hora": "21:00"
+  },
+  "prob_roubo_esperada": 0.844031
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CONSOLACAO",
+   "periodo": "Pela manhã",
+   "data": "2025-02-20",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.044899
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "BELA VISTA",
+   "periodo": "Pela manhã",
+   "data": "2025-11-04",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.037746
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "SACOMA",
+   "periodo": "A noite",
+   "data": "2025-12-12",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.186608
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Metroviário e Ferroviário Metropolitano",
+   "bairro": "IPIRANGA",
+   "periodo": "A noite",
+   "data": "2025-04-04",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.039271
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "GUAIANASES",
+   "periodo": "missing",
+   "data": "2025-02-06",
+   "hora": "22:00"
+  },
+  "prob_roubo_esperada": 0.884166
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PARQUE DO CARMO",
+   "periodo": "missing",
+   "data": "2025-02-28",
+   "hora": "21:30"
+  },
+  "prob_roubo_esperada": 0.901915
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Metroviário e Ferroviário Metropolitano",
+   "bairro": "ALTO DE PINHEIROS",
+   "periodo": "A tarde",
+   "data": "2025-04-26",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.03364
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA SABRINA",
+   "periodo": "missing",
+   "data": "2025-09-11",
+   "hora": "09:30"
+  },
+  "prob_roubo_esperada": 0.673334
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "BARRA FUNDA",
+   "periodo": "missing",
+   "data": "2025-02-09",
+   "hora": "23:20"
+  },
+  "prob_roubo_esperada": 0.842326
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "LIBERDADE",
+   "periodo": "missing",
+   "data": "2025-11-28",
+   "hora": "09:40"
+  },
+  "prob_roubo_esperada": 0.261521
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CAPAO REDONDO",
+   "periodo": "missing",
+   "data": "2025-11-03",
+   "hora": "05:20"
+  },
+  "prob_roubo_esperada": 0.953972
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PENHA",
+   "periodo": "A noite",
+   "data": "2025-11-01",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.188603
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "ITAIM BIBI",
+   "periodo": "missing",
+   "data": "2025-11-04",
+   "hora": "21:30"
+  },
+  "prob_roubo_esperada": 0.800088
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PINHEIROS",
+   "periodo": "missing",
+   "data": "2024-12-27",
+   "hora": "19:00"
+  },
+  "prob_roubo_esperada": 0.61769
+ },
+ {
+  "entrada": {
+   "tipo_local": "Outros",
+   "subtipo_local": "Outros",
+   "bairro": "VILA MARIA",
+   "periodo": "A tarde",
+   "data": "2025-12-03",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.01884
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JARDIM CORISCO",
+   "periodo": "missing",
+   "data": "2025-06-11",
+   "hora": "14:00"
+  },
+  "prob_roubo_esperada": 0.548989
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "REPUBLICA",
+   "periodo": "missing",
+   "data": "2025-08-08",
+   "hora": "18:00"
+  },
+  "prob_roubo_esperada": 0.515622
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA LEOPOLDINA",
+   "periodo": "missing",
+   "data": "2025-03-22",
+   "hora": "10:00"
+  },
+  "prob_roubo_esperada": 0.612603
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CIDADE ANTÔNIO ESTÊVÃO DE CARVALHO",
+   "periodo": "missing",
+   "data": "2025-12-17",
+   "hora": "11:20"
+  },
+  "prob_roubo_esperada": 0.726667
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PEDREIRA",
+   "periodo": "missing",
+   "data": "2025-06-10",
+   "hora": "18:30"
+  },
+  "prob_roubo_esperada": 0.875104
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CAMPOS ELÍSEOS",
+   "periodo": "A noite",
+   "data": "2025-12-23",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.101424
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JARDIM ROSANA",
+   "periodo": "Pela manhã",
+   "data": "2025-03-10",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.248497
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CAPAO REDONDO",
+   "periodo": "missing",
+   "data": "2025-06-08",
+   "hora": "02:35"
+  },
+  "prob_roubo_esperada": 0.964313
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA HELIOPOLIS",
+   "periodo": "De madrugada",
+   "data": "2025-04-06",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.150114
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "BRÁS",
+   "periodo": "De madrugada",
+   "data": "2025-11-27",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.088865
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "VILA FORMOSA",
+   "periodo": "missing",
+   "data": "2025-04-24",
+   "hora": "01:20"
+  },
+  "prob_roubo_esperada": 0.793108
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "BRASILANDIA",
+   "periodo": "A noite",
+   "data": "2025-07-12",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.216042
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CONSOLAÇÃO",
+   "periodo": "missing",
+   "data": "2025-07-31",
+   "hora": "16:00"
+  },
+  "prob_roubo_esperada": 0.40902
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "LUZ",
+   "periodo": "missing",
+   "data": "2025-09-30",
+   "hora": "20:00"
+  },
+  "prob_roubo_esperada": 0.397879
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "NOSSA SENHORA DO O",
+   "periodo": "A tarde",
+   "data": "2025-10-11",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.049427
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "REPUBLICA",
+   "periodo": "missing",
+   "data": "2025-03-23",
+   "hora": "03:33"
+  },
+  "prob_roubo_esperada": 0.68788
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "SAUDE",
+   "periodo": "missing",
+   "data": "2025-03-07",
+   "hora": "10:30"
+  },
+  "prob_roubo_esperada": 0.829104
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CONJUNTO RESIDENCIAL BUTANTÃ",
+   "periodo": "missing",
+   "data": "2025-01-29",
+   "hora": "21:45"
+  },
+  "prob_roubo_esperada": 0.863773
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PINHEIROS",
+   "periodo": "Pela manhã",
+   "data": "2025-05-22",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.045149
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JD SÃO LUIS",
+   "periodo": "missing",
+   "data": "2025-06-17",
+   "hora": "07:50"
+  },
+  "prob_roubo_esperada": 0.910888
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "BRAS",
+   "periodo": "missing",
+   "data": "2025-01-07",
+   "hora": "06:00"
+  },
+  "prob_roubo_esperada": 0.494953
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "BRAS",
+   "periodo": "missing",
+   "data": "2025-09-22",
+   "hora": "05:20"
+  },
+  "prob_roubo_esperada": 0.472597
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Metroviário e Ferroviário Metropolitano",
+   "bairro": "BELENZINHO",
+   "periodo": "missing",
+   "data": "2025-03-26",
+   "hora": "10:40"
+  },
+  "prob_roubo_esperada": 0.225042
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "BARRA FUNDA",
+   "periodo": "missing",
+   "data": "2025-10-12",
+   "hora": "02:00"
+  },
+  "prob_roubo_esperada": 0.707588
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "BRASILANDIA",
+   "periodo": "A noite",
+   "data": "2025-11-12",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.212346
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "LIMAO",
+   "periodo": "De madrugada",
+   "data": "2025-01-15",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.22726
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "PINHEIROS",
+   "periodo": "missing",
+   "data": "2025-09-16",
+   "hora": "08:12"
+  },
+  "prob_roubo_esperada": 0.590557
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JARDIM ARPOADOR",
+   "periodo": "missing",
+   "data": "2025-06-01",
+   "hora": "04:00"
+  },
+  "prob_roubo_esperada": 0.886665
+ },
+ {
+  "entrada": {
+   "tipo_local": "Outros",
+   "subtipo_local": "Outros",
+   "bairro": "MOEMA",
+   "periodo": "A tarde",
+   "data": "2025-10-26",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.010577
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CENTRO",
+   "periodo": "A tarde",
+   "data": "2025-08-23",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.043135
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JD SÃO LUIS",
+   "periodo": "missing",
+   "data": "2025-02-15",
+   "hora": "23:20"
+  },
+  "prob_roubo_esperada": 0.962411
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CAPAO REDONDO",
+   "periodo": "A noite",
+   "data": "2025-01-09",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.425051
+ },
+ {
+  "entrada": {
+   "tipo_local": "Outros",
+   "subtipo_local": "Outros",
+   "bairro": "CAMPO LIMPO",
+   "periodo": "A noite",
+   "data": "2025-08-23",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.195866
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CAMBUCI",
+   "periodo": "missing",
+   "data": "2025-03-05",
+   "hora": "07:30"
+  },
+  "prob_roubo_esperada": 0.47004
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Metroviário e Ferroviário Metropolitano",
+   "bairro": "MOOCA",
+   "periodo": "A tarde",
+   "data": "2025-02-12",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.011047
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "JARDIM ANGELA",
+   "periodo": "A noite",
+   "data": "2025-08-31",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.380765
+ },
+ {
+  "entrada": {
+   "tipo_local": "Outros",
+   "subtipo_local": "Outros",
+   "bairro": "MOEMA",
+   "periodo": "A tarde",
+   "data": "2025-02-05",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.012074
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "MOEMA",
+   "periodo": "missing",
+   "data": "2025-10-02",
+   "hora": "11:10"
+  },
+  "prob_roubo_esperada": 0.508941
+ },
+ {
+  "entrada": {
+   "tipo_local": "Terminal/Estação",
+   "subtipo_local": "Metroviário e Ferroviário Metropolitano",
+   "bairro": "JARDIM SÃO LUÍS",
+   "periodo": "De madrugada",
+   "data": "2025-11-14",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.047004
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "ITAIM BIBI",
+   "periodo": "missing",
+   "data": "2025-02-18",
+   "hora": "19:58"
+  },
+  "prob_roubo_esperada": 0.752114
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "CONSOLAÇÃO",
+   "periodo": "missing",
+   "data": "2025-04-13",
+   "hora": "23:15"
+  },
+  "prob_roubo_esperada": 0.658299
+ },
+ {
+  "entrada": {
+   "tipo_local": "Via Pública",
+   "subtipo_local": "Via Pública",
+   "bairro": "BARRA FUNDA",
+   "periodo": "A noite",
+   "data": "2025-09-19",
+   "hora": ""
+  },
+  "prob_roubo_esperada": 0.092059
+ }
+]
