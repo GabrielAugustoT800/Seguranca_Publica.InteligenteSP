@@ -23,7 +23,7 @@ VAL_SIZE = 0.15
 TEST_SIZE = 0.15
 
 # Hiperparâmetros base da MLP
-LEARNING_RATE = 1e-3
+LEARNING_RATE = 1e-4
 EPOCHS = 50
 BATCH_SIZE = 32
 
