@@ -1,0 +1,25 @@
+# Configuração do Netlify para a aplicação web de classificação MLP.
+# Site estático (HTML/CSS/JS) + função serverless de inferência (Python não roda no Netlify,
+# portanto o forward pass da MLP foi reimplementado em JavaScript puro).
+
+"$schema" = "https://open-api.netlify.com/netlify.schema.json"
+
+[build]
+  # Sem passo de build: publica os arquivos prontos da pasta netlify/public.
+  # Comando explícito evita detecção automática de Python/requirements.txt na raiz.
+  command = "echo 'site estatico: sem build'"
+  publish = "netlify/public"
+
+[functions]
+  # Pasta das funções serverless (inferência da MLP).
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# Cabeçalhos de segurança para todas as respostas estáticas e da API.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer"
+    cache-control = "max-age=0, no-cache, no-store, must-revalidate"

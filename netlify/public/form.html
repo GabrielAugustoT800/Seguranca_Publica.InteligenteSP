@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descrever ocorrência · InteligenteSP</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="pular" href="#formulario">Pular para o formulário</a>
+  <main class="pagina">
+    <header class="cabecalho">
+      <a href="index.html" class="marca">InteligenteSP</a>
+      <h1>Descreva a ocorrência</h1>
+      <p class="subtitulo">A rede MLP (64→32) estima se a ocorrência descrita é um <strong>roubo</strong> ou um <strong>furto</strong> de celular.</p>
+    </header>
+
+    <p class="aviso" id="aviso-topo">
+      <strong>Como ler o resultado:</strong> a saída é a classe estimada para a ocorrência que você descrever.
+      Ela <strong>não</strong> mede risco nem a chance de um crime acontecer em um local, data ou horário.
+    </p>
+
+    <form id="formulario" novalidate aria-describedby="aviso-topo dica-campos">
+      <p class="dica" id="dica-campos">Todos os campos são opcionais. Campos vazios são tratados como ausentes, como no treino do modelo.</p>
+      <div class="grade">
+        <div class="campo">
+          <label for="tipo_local">Tipo de local</label>
+          <select id="tipo_local" name="tipo_local"><option value="">Carregando…</option></select>
+        </div>
+        <div class="campo">
+          <label for="subtipo_local">Subtipo de local</label>
+          <select id="subtipo_local" name="subtipo_local" aria-describedby="dica-subtipo"><option value="">Escolha o tipo primeiro</option></select>
+          <small id="dica-subtipo">Lista os subtipos mais frequentes do tipo escolhido.</small>
+        </div>
+        <div class="campo">
+          <label for="bairro">Bairro</label>
+          <input type="text" id="bairro" name="bairro" list="lista-bairros" autocomplete="off" maxlength="120" aria-describedby="dica-bairro">
+          <datalist id="lista-bairros"></datalist>
+          <small id="dica-bairro">Digite para ver sugestões. Bairros não vistos no treino não contribuem para a classificação.</small>
+        </div>
+        <div class="campo">
+          <label for="periodo">Período do dia</label>
+          <select id="periodo" name="periodo"><option value="">Carregando…</option></select>
+        </div>
+        <div class="campo">
+          <label for="data">Data da ocorrência</label>
+          <input type="date" id="data" name="data" min="2000-01-01" max="2100-12-31" aria-describedby="erro-data">
+          <small class="erro-campo" id="erro-data" hidden></small>
+        </div>
+        <div class="campo">
+          <label for="hora">Hora da ocorrência</label>
+          <input type="time" id="hora" name="hora" aria-describedby="erro-hora">
+          <small class="erro-campo" id="erro-hora" hidden></small>
+        </div>
+      </div>
+
+      <div class="mensagem-erro" id="erro-geral" role="alert" hidden></div>
+
+      <div class="acoes">
+        <a href="index.html" class="btn-secundario">Voltar</a>
+        <button type="reset" class="btn-secundario">Limpar</button>
+        <button type="submit" class="btn-primario" id="enviar">Classificar</button>
+      </div>
+    </form>
+  </main>
+  <script type="module" src="js/form.js"></script>
+</body>
+</html>

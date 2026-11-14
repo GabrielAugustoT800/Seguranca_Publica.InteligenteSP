@@ -190,6 +190,9 @@ cython_debug/
 #   option (not recommended) you can uncomment the following to ignore the entire idea folder.
 # .idea/
 
+# Netlify local dev
+.netlify/
+
 # Abstra
 #   Abstra is an AI-powered process automation framework.
 #   Ignore directories containing user credentials, local state, and settings.
@@ -219,14 +222,14 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# === Específico do projeto ===
+# === Especï¿½fico do projeto ===
 # Dados brutos e processados (manter apenas .gitkeep)
 data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
-# Modelos binários (manter estrutura, versionar via instruções no README)
+# Modelos binï¿½rios (manter estrutura, versionar via instruï¿½ï¿½es no README)
 models/**/*.pth
 models/**/*.h5
 models/**/*.pkl
