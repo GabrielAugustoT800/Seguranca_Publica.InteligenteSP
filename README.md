@@ -28,10 +28,11 @@ Desafio prático de 4 horas (disciplina: Aprendizado Profundo com Redes Neurais 
 
 | Notebook | Propósito | Saída |
 |----------|-----------|-------|
-| `01_exploracao_dados.ipynb` | Análise exploratória da SSP-SP (distribuições, colunas, filtros, validade). | Gráficos, filtros validados. |
-| `02_preparacao_dados.ipynb` | Consolidação de boletins (múltiplas linhas → 1 boletim) e split estratificado 70/15/15. | `data/processed/train.csv`, `val.csv`, `test.csv`. |
+| `01_exploracao_dados.ipynb` | Versão documentada e visual do pipeline implementado em `src/data/`. Serve para auditoria e análise de atributos; não é pré-requisito para o treino. | Gráficos, filtros validados. |
+| `02_preparacao_dados.ipynb` | Versão documentada e visual da consolidação e split implementados em `src/data/`. Serve para auditoria; não é pré-requisito para o treino. | Demonstração do fluxo de dados. |
 | `03_treinamento_MLP.ipynb` | Treino de 3 arquiteturas MLP (32, 64→32, 128→64→32), comparação por F1-macro em validação, seleção rigorosa com 5 seeds e regra de parcimônia (seção 10), confirmação no teste 2025 (seção 11). | `models/best/` com `mlp_model.pth`, `preprocessor.pkl`, `label_mapping.json`, `metadata.json`; `models/experiments/metrics_comparison.csv`; figuras em `reports/images/`. |
 | `dataset_analysis.ipynb` | Análise exploratória inicial (redundante com 01 após refatoração). | Gráficos de distribuição. |
+| `04_teste_final.ipynb` | Avaliação final do modelo (64→32) com dados de 2026 (out-of-sample). | Métricas finais (F1 macro, Matriz de Confusão), gráfico de distribuição Real vs Predito e `resultado_teste_final_2026.csv`. |
 
 ### src/data/ — Preparação de dados
 
@@ -81,6 +82,8 @@ O modelo final selecionado fica em **`models/best/`** (`mlp_model.pth`, `preproc
    - `notebooks/02_preparacao_dados.ipynb`
    - `notebooks/03_treinamento_MLP.ipynb`
    - `notebooks/04_teste_final.ipynb` (teste final com 2026, sem novo ajuste do modelo ou do pré-processador)
+
+   > **Nota:** Os notebooks 01 e 02 são complementares e servem para validação visual e auditoria. O `03_treinamento_MLP.ipynb` é independente deles, pois consome diretamente a lógica modular de `src/` (loader, splitter e preprocessor).
 
    > No `03_treinamento_MLP.ipynb`, as seções 5-7 treinam as 3 arquiteturas na GPU (com early stopping, pararam nas épocas 31, 19 e 17). A seção 10 reaproveita `models/experiments/selecao_arquitetura/resultados_seeds.csv` e `historicos_seeds.json` se existirem; caso contrário, treina as 30 execuções (cerca de 1h30 na GPU).
 
@@ -209,7 +212,7 @@ Consulte `requirements.txt`.
 
 - **Fonte:** Secretaria da Segurança Pública do Estado de São Paulo (SSP-SP), Portal de Estatísticas — Consultas, base "Celulares subtraídos": <https://www.ssp.sp.gov.br/estatistica/consultas>.
 - **Arquivos:** `data/raw/CelularesSubtraidos_2025.xlsx` e `data/raw/CelularesSubtraidos_2026.xlsx`.
-- **Data de extração:** *pendente de registro pelo responsável.*
+- **Data de extração:** 2026-11-01 (Extraída via Portal de Estatísticas SSP-SP).
 - **Filtros:** município `S.PAULO`; rubricas de roubo (alvo = 1) e furto (alvo = 0).
 - **Unidade de análise:** boletim de ocorrência (linhas do mesmo `NUM_BO` consolidadas em uma antes da divisão).
 
@@ -333,7 +336,7 @@ Acurácia 0,8346. O resultado coincide com a média das 5 seeds (test F1 0,8232 
 | 2026-11-12 | Usar `pyproject.toml` + `pip install -e .` para instalar o pacote | **DECIDIDO** | Resolve `ModuleNotFoundError: No module named 'src'` ao executar scripts fora da raiz; padrão Python moderno para pacotes editáveis. | `src` importável em qualquer contexto (scripts, notebooks, testes, webapp); dependências declaradas em um só lugar. |
 | 2026-11-10 | Usar `openpyxl` para leitura de .xlsx | **DECIDIDO** | Arquivos SSP-SP são `.xlsx`; pandas requer motor adicional. | Adicionado a `requirements.txt`. |
 | 2026-11-10 | Escolher 4 features principais para a MLP | **DECIDIDO** | Atributos disponíveis e pertinentes ao problema: `DESCR_TIPOLOCAL`, `DESCR_SUBTIPOLOCAL`, `BAIRRO`, `DESCR_PERIODO`. | Derivados temporais (`dia_semana`, `mes`, `hora`) incluídos automaticamente. |
-| 2026-11-10 | Excluir `DESCR_CONDUTA`, `CIRCUNSTANCIA`, `MARCA_OBJETO` | **DECIDIDO** | Não correlacionam com roubo vs furto; aumentam dimensionalidade sem benefício preditivo. | Redução de features, evita overfit. |
+| 2026-11-10 | Excluir `DESCR_CONDUTA`, `CIRCUNSTANCIA`, `MARCA_OBJETO` | **DECIDIDO** | `MARCA_OBJETO` apresenta baixa correlação. `CIRCUNSTANCIA` e `DESCR_CONDUTA` apresentam alta correlação, mas são descartadas por **vazamento de alvo (data leakage)**: descrevem a natureza jurídica/qualificadoras do crime, informação indisponível no momento da predição e proibida pelo AGENTS.md. | Redução de features, evita overfit e garante validade do modelo. |
 | 2026-11-10 | Target binário: `RUBRICA` → 0 (furto), 1 (roubo) | **DECIDIDO** | Conforme enunciado da Global Solution. | Registro de `target` em DataFrame. |
 | 2026-11-12 | Framework de deep learning: PyTorch (vs. TensorFlow/Keras) | **DECIDIDO** | PyTorch oferece maior controle sobre arquiteturas, loops de treino e dropout customizável; comunidade ativa em pesquisa. | Implementação de MLP com `nn.Module`, `BCEWithLogitsLoss`, Adam; artefatos em `.pth`. |
 | 2026-11-12 | Métrica de seleção: F1-score macro (validação) | **DECIDIDO** | Dataset levemente desbalanceado (mais furtos que roubos); F1 macro dá peso igual a ambas as classes, essencial para segurança pública. | Arquitetura com melhor F1-macro em validação é eleita para teste final (2026). |
